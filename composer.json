@@ -1,0 +1,21 @@
+{
+    "name": "infotech/mysql-data-dumper",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Anton Tyutin",
+            "email": "anton@tyutin.ru"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "ext-pdo": "*"
+    },
+
+    "autoload": {
+        "classmap": [
+            "src/"
+        ]
+    },
+    "minimum-stability": "dev"
+}
