@@ -91,7 +91,7 @@ class MysqlDataDumper
      */
     private function fetchTableNames($connection)
     {
-        return $connection->query('SHOW TABLES')->fetchAll(PDO::FETCH_COLUMN);
+        return $connection->query('SHOW FULL TABLES WHERE TABLE_TYPE = "BASE TABLE"')->fetchAll(PDO::FETCH_COLUMN);
     }
 
 }
